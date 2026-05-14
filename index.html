@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>My Money</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="wrap">
+
+    <aside>
+        <div id="logo">
+            <div id="logo_icon"></div>
+            <div>
+                <h1>My Money</h1>
+                <p>나의 소비와 자산을 한눈에</p>
+            </div>
+        </div>
+
+        <ul id="menu">
+            <li class="active">💼 대시보드</li>
+            <li>➕ 수입 관리</li>
+            <li>➖ 지출 관리</li>
+            <li>▦ 카테고리 관리</li>
+            <li>📊 월별 통계</li>
+            <li>🎯 목표 관리</li>
+            <li>◔ 자산 관리</li>
+            <li>⚙ 설정</li>
+        </ul>
+
+        <div id="side_banner">
+            <h3>가계부를 꾸준히<br>작성해보세요!</h3>
+            <p>작은 습관이 큰 변화를 만듭니다.</p>
+            <div id="wallet">💵</div>
+        </div>
+    </aside>
+
+    <main>
+        <header>
+            <input type="text" placeholder="🔍  검색어를 입력하세요">
+
+            <div id="top_menu">
+                <span>🔔</span>
+                <button>로그인</button>
+                <span>⚙</span>
+            </div>
+        </header>
+
+        <section id="cards">
+            <div class="card">
+                <div class="circle blue">💳</div>
+                <div>
+                    <p>총 자산</p>
+                    <h2>1,250,000원</h2>
+                    <span class="plus">지난 달 대비 +5.2% ↑</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="circle green">↓</div>
+                <div>
+                    <p>이번 달 수입</p>
+                    <h2>800,000원</h2>
+                    <span class="plus">지난 달 대비 +12.5% ↑</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="circle red">↑</div>
+                <div>
+                    <p>이번 달 지출</p>
+                    <h2>320,000원</h2>
+                    <span class="minus">지난 달 대비 +8.1% ↑</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="circle yellow">🐷</div>
+                <div>
+                    <p>남은 예산</p>
+                    <h2>480,000원</h2>
+                    <span>예산 대비 60%</span>
+                    <div class="progress">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main_grid">
+
+            <div id="left_content">
+
+                <div id="chart_calendar">
+
+                    <div class="box graph_box">
+                        <div class="box_title">
+                            <h2>월별 지출 그래프</h2>
+                            <select class="year_select">
+                            <option>2026년</option>
+                            <option>2025년</option>
+                            <option selected>2024년</option>
+                            <option>2023년</option>
+                            <option>2022년</option>
+                           </select>
+                        </div>
+
+                        <div id="graph">
+                            <div class="money_line">300만</div>
+                            <div class="money_line">250만</div>
+                            <div class="money_line">200만</div>
+                            <div class="money_line">150만</div>
+                            <div class="money_line">100만</div>
+
+                            <div class="bar_area">
+                                <div class="bar bar1"><span>1월</span></div>
+                                <div class="bar bar2"><span>2월</span></div>
+                                <div class="bar bar3"><span>3월</span></div>
+                                <div class="bar bar4"><span>4월</span></div>
+                                <div class="bar bar5 active_bar"><span>5월</span></div>
+                                <div class="bar bar6"><span>6월</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box calendar_box">
+                        <div class="box_title">
+                            <h2>2026년 5월</h2>
+                            <button>오늘</button>
+                        </div>
+
+                        <div class="calendar">
+                            <div class="week">일</div>
+                            <div class="week">월</div>
+                            <div class="week">화</div>
+                            <div class="week">수</div>
+                            <div class="week">목</div>
+                            <div class="week">금</div>
+                            <div class="week">토</div>
+
+                            <div class="day light">26</div>
+                            <div class="day light">27</div>
+                            <div class="day light">28</div>
+                            <div class="day light">29</div>
+                            <div class="day light">30</div>
+                            <div class="day">1<span class="plus">+800,000</span></div>
+                            <div class="day">2</div>
+                            <div class="day">3<span class="minus">-12,000</span></div>
+                            <div class="day">4</div>
+
+                            <div class="day">5<span class="minus">-45,000</span></div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8<span class="minus">-5,500</span></div>
+                            <div class="day">9</div>
+                            <div class="day">10<span class="minus">-12,000</span></div>
+                            <div class="day">11</div>
+
+                            <div class="day">12<span class="plus">+50,000</span></div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15<span class="minus">-32,000</span></div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18<span class="minus">-9,900</span></div>
+
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21<span class="plus">+120,000</span></div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24<span class="minus">-18,000</span></div>
+                            <div class="day">25</div>
+
+                            <div class="day">26</div>
+                            <div class="day">27<span class="minus">-25,000</span></div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30<span class="minus">-8,000</span></div>
+                            <div class="day">31</div>
+                            <div class="day light">1</div>
+                        </div>
+
+                        <div class="legend">
+                            <span class="dot blue_dot"></span> 수입
+                            <span class="dot red_dot"></span> 지출
+                            <span class="dot gray_dot"></span> 없음
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box category_box">
+                    <h2>카테고리별 지출 <small>클릭하여 금액 입력</small></h2>
+
+                    <div id="category_area">
+                        <div class="category active_category">
+                            <div class="icon food">🍴</div>
+                            <p>음식</p>
+                            <span>87,000원</span>
+                        </div>
+
+                        <div class="category">
+                            <div class="icon stock">📈</div>
+                            <p>주식</p>
+                            <span>350,000원</span>
+                        </div>
+
+                        <div class="category">
+                            <div class="icon health">🏋</div>
+                            <p>운동</p>
+                            <span>120,000원</span>
+                        </div>
+
+                        <div class="category">
+                            <div class="icon hospital">➕</div>
+                            <p>병원</p>
+                            <span>45,000원</span>
+                        </div>
+
+                        <div class="category">
+                            <div class="icon shopping">🛍</div>
+                            <p>쇼핑</p>
+                            <span>98,000원</span>
+                        </div>
+
+                        <div class="category">
+                            <div class="icon bus">🚌</div>
+                            <p>교통</p>
+                            <span>32,000원</span>
+                        </div>
+
+                        <div class="category">
+                            <div class="icon cafe">☕</div>
+                            <p>카페</p>
+                            <span>18,000원</span>
+                        </div>
+
+                        <div class="category">
+                            <div class="icon etc">•••</div>
+                            <p>기타</p>
+                            <span>12,000원</span>
+                        </div>
+                    </div>
+
+                    <div id="input_area">
+                        <select>
+                            <option>🍴 음식</option>
+                            <option>📈 주식</option>
+                            <option>🏋 운동</option>
+                            <option>➕ 병원</option>
+                            <option>🛍 쇼핑</option>
+                            <option>🚌 교통</option>
+                            <option>☕ 카페</option>
+                            <option>••• 기타</option>
+                        </select>
+
+                        <input type="text" placeholder="금액을 입력하세요 (원)">
+                        <input type="text" placeholder="메모를 입력하세요 (선택)">
+                        <button>추가하기</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="box table_box">
+            <div class="box_title">
+                <h2>최근 소비 내역</h2>
+                <button>전체 보기</button>
+            </div>
+
+            <table>
+                <tr>
+                    <th>날짜</th>
+                    <th>카테고리</th>
+                    <th>내용</th>
+                    <th>금액</th>
+                    <th>메모</th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td>2024.05.10</td>
+                    <td>🍴 음식</td>
+                    <td>점심 식사</td>
+                    <td class="minus">-12,000원</td>
+                    <td>김밥</td>
+                    <td>•••</td>
+                </tr>
+
+                <tr>
+                    <td>2024.05.09</td>
+                    <td>🛍 쇼핑</td>
+                    <td>운동복 구매</td>
+                    <td class="minus">-45,000원</td>
+                    <td></td>
+                    <td>•••</td>
+                </tr>
+
+                <tr>
+                    <td>2024.05.08</td>
+                    <td>🚌 교통</td>
+                    <td>버스 요금</td>
+                    <td class="minus">-1,500원</td>
+                    <td></td>
+                    <td>•••</td>
+                </tr>
+
+                <tr>
+                    <td>2024.05.07</td>
+                    <td>🏋 운동</td>
+                    <td>헬스장 PT</td>
+                    <td class="minus">-30,000원</td>
+                    <td>PT 1회</td>
+                    <td>•••</td>
+                </tr>
+
+                <tr>
+                    <td>2024.05.05</td>
+                    <td>📈 주식</td>
+                    <td>테슬라 주식 매수</td>
+                    <td class="minus">-50,000원</td>
+                    <td>소수점 매수</td>
+                    <td>•••</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
