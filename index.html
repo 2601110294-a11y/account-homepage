@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>My Money</title>
     <link rel="stylesheet" href="style.css">
+    <script src ="https://code.jquery.com/jquery-4.0.0.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -70,7 +72,7 @@
                 <div class="circle red">↑</div>
                 <div>
                     <p>이번 달 지출</p>
-                    <h2>320,000원</h2>
+                    <h2 id="expense_total">320,000원</h2>
                     <span class="minus">지난 달 대비 +8.1% ↑</span>
                 </div>
             </div>
@@ -256,9 +258,10 @@
                             <option>••• 기타</option>
                         </select>
 
-                        <input type="text" placeholder="금액을 입력하세요 (원)">
-                        <input type="text" placeholder="메모를 입력하세요 (선택)">
-                        <button>추가하기</button>
+                        <input type="text" id="money" placeholder="금액을 입력하세요 (원)">
+                        <input type="text" id="content" placeholder="내용을 입력하세요">
+                        <input type="text" id="memo" placeholder="메모를 입력하세요 (선택)">
+                        <button id="add_btn">추가하기</button>
                     </div>
                 </div>
 
